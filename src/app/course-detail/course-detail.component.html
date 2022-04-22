@@ -1,0 +1,19 @@
+<div>
+  <mat-card>
+    <h1 class="name_page">Course Detail</h1>
+  </mat-card>
+</div>
+
+<div class="title_view">
+  <h2>{{course?.title}}</h2>
+</div>
+
+<h3 class="detail_view">
+  <p class="description_view"><strong>Description</strong>: {{course?.description}}</p>
+  <p><strong>Number of Students</strong>: {{course?.number_students}}</p>
+  <p><strong>Time Slot</strong>: {{course?.time_slot}}</p>
+</h3>
+
+<div class="back_button">
+  <button mat-stroked-button (click)="goBack()" color="primary">back</button>
+</div>

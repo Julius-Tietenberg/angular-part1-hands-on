@@ -1,0 +1,38 @@
+<div>
+  <mat-card (click)="reloadPage()">
+    <h1 class="name_page">Course Overview</h1>
+  </mat-card>
+</div>
+
+<div class="button_menu">
+  <div>
+    <a routerLink="/dashboard"
+    >
+      <button mat-stroked-button>Dashboard</button>
+    </a>
+  </div>
+  <div>
+    <a routerLink="/profil"
+    >
+      <button mat-stroked-button>Profil</button>
+    </a>
+  </div>
+</div>
+
+<div class="course_items">
+  <div style="display: flex" *ngFor="let course of courses">
+    <a
+      routerLink="/detail/{{course.id}}"
+    >
+      <mat-card class="course_item">
+        <img mat-card-image src={{course.link}} alt={{course.title}}>
+        <mat-card-content>
+          <p style="text-align: center">
+            {{ course.title }}
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </a>
+  </div>
+</div>
+

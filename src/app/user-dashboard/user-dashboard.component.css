@@ -1,0 +1,16 @@
+.name_page {
+  text-align: center;
+}
+
+.user_view {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.mat-form-field {
+  width: 400px;
+}
+
+button{
+  margin-left: 10px;
+}

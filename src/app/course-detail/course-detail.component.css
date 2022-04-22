@@ -1,0 +1,19 @@
+.name_page {
+  text-align: center;
+}
+
+.title_view {
+  text-align: center; margin-top: 20px
+}
+
+.detail_view {
+  margin-left: 20rem;
+}
+
+.description_view {
+  max-width: 80%;
+}
+
+.back_button {
+  text-align: center;
+}

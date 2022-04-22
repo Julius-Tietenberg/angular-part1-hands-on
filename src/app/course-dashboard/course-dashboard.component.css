@@ -1,0 +1,28 @@
+.name_page {
+  text-align: center;
+}
+
+.my_course_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.my_course_items > div {
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.my_course_item {
+  height: 210px;
+  width: 300px
+}
+
+a {
+  text-decoration: none;
+}
+
+.back_button {
+  text-align: center;
+}
