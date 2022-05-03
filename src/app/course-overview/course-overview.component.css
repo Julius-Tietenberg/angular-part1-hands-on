@@ -13,6 +13,15 @@
   font-size: 30px;
 }
 
+.add-cours-form {
+  width: 30%;
+  text-align: center;
+  margin: 0 auto;
+}
+mat-form-field {
+  width: 95%;
+}
+
 .course_items {
   display: flex;
   flex-wrap: wrap;
@@ -27,7 +36,7 @@
 
 .course_item {
   height: 210px;
-  width: 300px
+  width: 300px;
 }
 
 a {

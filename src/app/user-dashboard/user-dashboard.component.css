@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.user_info {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .user_view {
   margin-top: 20px;
   text-align: center;
@@ -11,6 +16,6 @@
   width: 400px;
 }
 
-button{
+button {
   margin-left: 10px;
 }

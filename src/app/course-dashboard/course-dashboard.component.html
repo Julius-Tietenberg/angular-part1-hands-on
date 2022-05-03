@@ -6,11 +6,9 @@
 
 <div class="my_course_items">
   <div style="display: flex" *ngFor="let course of myCourses">
-    <a
-      routerLink="/detail/{{course.id}}"
-    >
+    <a routerLink="/detail/{{ course.id }}">
       <mat-card class="my_course_item">
-        <img mat-card-image src={{course.link}} alt={{course.title}}>
+        <img mat-card-image src="{{ course.link }}" alt="{{ course.title }}" />
         <mat-card-content>
           <p style="text-align: center">
             {{ course.title }}
@@ -20,7 +18,6 @@
     </a>
   </div>
 </div>
-
 
 <div class="back_button">
   <button mat-stroked-button (click)="goBack()" color="primary">back</button>

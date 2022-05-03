@@ -1,17 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import {Course} from "../models/course";
-import {dummyCourses, myCoursesIds} from "../models/dummy";
+import { Course } from '../models/course';
+import { dummyCourses, myCoursesIds } from '../models/dummy';
 
 @Component({
   selector: 'app-course-dashboard',
   templateUrl: './course-dashboard.component.html',
-  styleUrls: ['./course-dashboard.component.css']
+  styleUrls: ['./course-dashboard.component.css'],
 })
 export class CourseDashboardComponent implements OnInit {
-
   myCourses: Course[] = [];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
     for (let course of dummyCourses) {
@@ -21,6 +20,9 @@ export class CourseDashboardComponent implements OnInit {
     }
   }
 
+  addCourse() {
+    console.log('add');
+  }
   goBack() {
     window.history.back();
   }
