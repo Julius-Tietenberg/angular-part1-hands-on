@@ -9,6 +9,9 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
 import { CourseDetailComponent } from './course-detail/course-detail.component';
 import {RouterModule, Routes} from "@angular/router";
 import { CourseDashboardComponent } from './course-dashboard/course-dashboard.component';
+import { CourseAddFormComponent } from './course-add-form/course-add-form.component';
+import { CourseCardComponent } from './course-card/course-card.component';
+import { CourseHeaderComponent } from './course-header/course-header.component';
 
 const routes: Routes = [
   { path: '', component: CourseOverviewComponent },
@@ -24,7 +27,10 @@ const routes: Routes = [
     CourseOverviewComponent,
     UserDashboardComponent,
     CourseDetailComponent,
-    CourseDashboardComponent
+    CourseDashboardComponent,
+    CourseAddFormComponent,
+    CourseCardComponent,
+    CourseHeaderComponent
   ],
   imports: [
     BrowserModule,

@@ -26,7 +26,7 @@ export let dummyCourses = [
   {
     id: 4,
     title: 'Computer Graphics',
-    link: 'https://wallpapers.com/images/thumb/curious-cat-8dq69bbx4fkntcaa.jpg',
+    link: 'https://wallpapers.com/images/high/black-white-laptop-cat-lybyzav790h3qf86.jpg',
     number_students: 24,
     description: 'In this tutorial, you will discover how to develop deep learning models for multi-label classification.',
     time_slot: 'Tuesday: 12:00-14:00'

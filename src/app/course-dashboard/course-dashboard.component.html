@@ -1,23 +1,10 @@
 <div>
-  <mat-card>
-    <h1 class="name_page">Course Dashboard</h1>
-  </mat-card>
+  <app-course-header [name]="'Course Dashboard'"></app-course-header>
 </div>
 
 <div class="my_course_items">
   <div style="display: flex" *ngFor="let course of myCourses">
-    <a
-      routerLink="/detail/{{course.id}}"
-    >
-      <mat-card class="my_course_item">
-        <img mat-card-image src={{course.link}} alt={{course.title}}>
-        <mat-card-content>
-          <p style="text-align: center">
-            {{ course.title }}
-          </p>
-        </mat-card-content>
-      </mat-card>
-    </a>
+    <app-course-card [status]="{course: course, action: 3}"></app-course-card>
   </div>
 </div>
 

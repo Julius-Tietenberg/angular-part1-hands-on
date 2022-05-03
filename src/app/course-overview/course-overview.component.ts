@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {dummyCourses} from "../models/dummy";
+import {dummyCourses, myCoursesIds} from "../models/dummy";
 import {Course} from "../models/course";
 
 @Component({
@@ -9,6 +9,7 @@ import {Course} from "../models/course";
 })
 export class CourseOverviewComponent implements OnInit {
   courses: Course[] = dummyCourses;
+  showAddCourse = false;
 
   constructor(
   ) { }
@@ -16,7 +17,7 @@ export class CourseOverviewComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  reloadPage() {
-   window.location.reload()
+  showFormCourse() {
+    this.showAddCourse = !this.showAddCourse
   }
 }

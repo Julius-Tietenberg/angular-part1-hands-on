@@ -1,7 +1,5 @@
 <div>
-  <mat-card (click)="reloadPage()">
-    <h1 class="name_page">Course Overview</h1>
-  </mat-card>
+  <app-course-header [name]="'Course Overview'"></app-course-header>
 </div>
 
 <div class="button_menu">
@@ -17,22 +15,24 @@
       <button mat-stroked-button>Profil</button>
     </a>
   </div>
+  <div>
+    <button mat-stroked-button
+            style="background-color: #064097; color: white"
+            (click)="showFormCourse()"
+    >
+      <div *ngIf="!showAddCourse; else elseBlock">Add Course</div>
+      <ng-template #elseBlock>Close Course Form</ng-template>
+    </button>
+  </div>
+</div>
+
+<div style="text-align: center; margin-top: 25px" *ngIf="showAddCourse">
+  <app-course-add-form></app-course-add-form>
 </div>
 
 <div class="course_items">
   <div style="display: flex" *ngFor="let course of courses">
-    <a
-      routerLink="/detail/{{course.id}}"
-    >
-      <mat-card class="course_item">
-        <img mat-card-image src={{course.link}} alt={{course.title}}>
-        <mat-card-content>
-          <p style="text-align: center">
-            {{ course.title }}
-          </p>
-        </mat-card-content>
-      </mat-card>
-    </a>
+    <app-course-card [status]="{course: course, action: 0}"></app-course-card>
   </div>
 </div>
 
