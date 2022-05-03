@@ -2,6 +2,18 @@
   <app-course-header [name]="'Course Detail'"></app-course-header>
 </div>
 
+<mat-card>
+  <mat-card-content>
+    <div class="user_info">
+      <p><strong>FirstName: </strong>{{ user.value.firstName }}</p>
+      <p><strong>LastName: </strong>{{ user.value.lastName }}</p>
+      <p><strong>Age: </strong>{{ user.value.age }}</p>
+      <p><strong>Major: </strong>{{ user.value.major }}</p>
+      <p><strong>Semester: </strong>{{ user.value.semester }}</p>
+    </div>
+  </mat-card-content>
+</mat-card>
+
 <div class="user_view">
   <form [formGroup]="user" (ngSubmit)="save()">
     <div>

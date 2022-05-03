@@ -10,3 +10,8 @@
 button{
   margin-left: 10px;
 }
+
+.user_info {
+  display: flex;
+  justify-content: space-around;
+}
