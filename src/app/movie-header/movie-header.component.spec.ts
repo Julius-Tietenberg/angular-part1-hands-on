@@ -1,20 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CourseHeaderComponent } from './course-header.component';
+import { MovieHeaderComponent } from './movie-header.component';
 
 describe('CourseHeaderComponent', () => {
-  let component: CourseHeaderComponent;
-  let fixture: ComponentFixture<CourseHeaderComponent>;
+  let component: MovieHeaderComponent;
+  let fixture: ComponentFixture<MovieHeaderComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CourseHeaderComponent ]
-    })
-    .compileComponents();
+      declarations: [MovieHeaderComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CourseHeaderComponent);
+    fixture = TestBed.createComponent(MovieHeaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

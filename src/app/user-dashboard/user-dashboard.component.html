@@ -1,5 +1,5 @@
 <div>
-  <app-course-header [name]="'Course Detail'"></app-course-header>
+  <app-movie-header [name]="'User Profil'"></app-movie-header>
 </div>
 
 <mat-card>
@@ -8,8 +8,6 @@
       <p><strong>FirstName: </strong>{{ user.value.firstName }}</p>
       <p><strong>LastName: </strong>{{ user.value.lastName }}</p>
       <p><strong>Age: </strong>{{ user.value.age }}</p>
-      <p><strong>Major: </strong>{{ user.value.major }}</p>
-      <p><strong>Semester: </strong>{{ user.value.semester }}</p>
     </div>
   </mat-card-content>
 </mat-card>
@@ -34,20 +32,6 @@
       <mat-form-field appearance="fill">
         <mat-label>Age</mat-label>
         <input type="number" matInput formControlName="age" />
-      </mat-form-field>
-    </div>
-
-    <div>
-      <mat-form-field appearance="fill">
-        <mat-label>Major</mat-label>
-        <input matInput formControlName="major" />
-      </mat-form-field>
-    </div>
-
-    <div>
-      <mat-form-field appearance="fill">
-        <mat-label>Semester</mat-label>
-        <input type="number" matInput formControlName="semester" />
       </mat-form-field>
     </div>
   </form>

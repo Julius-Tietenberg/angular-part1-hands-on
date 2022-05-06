@@ -1,6 +1,13 @@
+.img_view {
+  width: 40%;
+  margin: 30px auto;
+  padding-bottom: 0;
+}
+
 .title_view {
   text-align: center;
   margin-top: 20px;
+  font-size: 20px;
 }
 
 .detail_view {

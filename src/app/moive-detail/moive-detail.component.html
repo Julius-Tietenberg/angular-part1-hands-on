@@ -1,0 +1,26 @@
+<div>
+  <app-movie-header [name]="'Moive Detail'"></app-movie-header>
+</div>
+
+<div>
+  <mat-card class="img_view">
+    <!-- Taks 1 continue -->
+    <img mat-card-image src="{{ movie?.link }}" />
+  </mat-card>
+  <div class="title_view">
+    <h2>{{ movie?.name }}</h2>
+  </div>
+  <mat-card-content>
+    <h3 class="detail_view">
+      <div class="description_view">
+        <strong>Description :</strong>
+        <p>{{ movie?.description }}</p>
+      </div>
+      <strong>Released Time :</strong>
+      <p>{{ movie?.time }}</p>
+    </h3>
+  </mat-card-content>
+  <div class="back_button">
+    <button mat-stroked-button (click)="goBack()" color="primary">back</button>
+  </div>
+</div>

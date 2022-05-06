@@ -1,35 +1,41 @@
 .button_menu {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .button_menu > div {
   margin: 10px;
-  padding: 20px;
+  /* padding: 20px; */
   font-size: 30px;
 }
 
-.add-cours-form {
-  width: 30%;
-  text-align: center;
-  margin: 0 auto;
-}
 mat-form-field {
   width: 95%;
 }
 
-.course_items {
+.movie_items {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.course_items > div {
+.movie_items > div {
   margin: 10px;
   padding: 20px;
   font-size: 30px;
 }
+.movie_item {
+  height: 220px;
+  width: 300px;
+}
 
 a {
   text-decoration: none;
+}
+img {
+  height: 200px;
+}
+p {
+  text-align: center;
+  font-weight: bold;
 }
