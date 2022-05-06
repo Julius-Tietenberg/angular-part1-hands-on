@@ -1,12 +1,3 @@
-.name_page {
-  text-align: center;
-}
-
-.user_info {
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .user_view {
   margin-top: 20px;
   text-align: center;
@@ -18,4 +9,9 @@
 
 button {
   margin-left: 10px;
+}
+
+.user_info {
+  display: flex;
+  justify-content: space-around;
 }

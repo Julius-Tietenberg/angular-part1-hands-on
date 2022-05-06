@@ -8,11 +8,19 @@ import { dummyCourses, myCoursesIds } from '../models/dummy';
   styleUrls: ['./course-dashboard.component.css'],
 })
 export class CourseDashboardComponent implements OnInit {
+  myCoursesIds = [...new Set(myCoursesIds)];
   myCourses: Course[] = [];
 
   constructor() {}
 
   ngOnInit(): void {
+    this.update(this.myCoursesIds);
+    /*setTimeout(() => {
+      this.update(this.myCoursesIds);
+    }, 100);*/
+  }
+
+  update(myCoursesIds: any) {
     for (let course of dummyCourses) {
       if (myCoursesIds.includes(course.id)) {
         this.myCourses.push(course);
@@ -20,9 +28,11 @@ export class CourseDashboardComponent implements OnInit {
     }
   }
 
-  addCourse() {
-    console.log('add');
+  remove(newIds: number[]) {
+    this.myCourses = [];
+    this.update(newIds);
   }
+
   goBack() {
     window.history.back();
   }

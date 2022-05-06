@@ -1,0 +1,40 @@
+<mat-card class="course_item">
+  <a routerLink="/detail/{{ status?.course?.id }}">
+    <div *ngIf="status?.course?.link?.length === 0; else elseBlock">
+      <mat-icon style="font-size: 180px; margin-left: 52px">school</mat-icon>
+    </div>
+    <ng-template #elseBlock>
+      <img
+        mat-card-image
+        src="{{ status?.course?.link }}"
+        alt="{{ status?.course?.title }}"
+      />
+    </ng-template>
+
+    <mat-card-content>
+      <p style="text-align: center">
+        {{ status?.course?.title }}
+      </p>
+    </mat-card-content>
+  </a>
+
+  <mat-card-actions style="text-align: center">
+    <button
+      mat-stroked-button
+      color="primary"
+      (click)="addToMyCourse(status?.course?.id)"
+      *ngIf="status?.action === 0"
+    >
+      Add To My Courses
+    </button>
+
+    <button
+      mat-stroked-button
+      color="warn"
+      (click)="removeFromMyCourse(status?.course?.id)"
+      *ngIf="status?.action === 1"
+    >
+      Remove From My Courses
+    </button>
+  </mat-card-actions>
+</mat-card>

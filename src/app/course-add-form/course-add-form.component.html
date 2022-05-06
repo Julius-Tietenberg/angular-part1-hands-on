@@ -1,0 +1,51 @@
+<div class="course_form_view">
+  <mat-card>
+    <form [formGroup]="course" (ngSubmit)="save()">
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Title</mat-label>
+          <input matInput formControlName="title">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Link Showing directly the photo: MUST BE VALID LINK (Optional)</mat-label>
+          <input matInput formControlName="link">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Number of Students</mat-label>
+          <input type="number" matInput formControlName="number_students">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Time Slot</mat-label>
+          <input matInput formControlName="time_slot">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Description</mat-label>
+          <textarea rows="8" matInput formControlName="description"></textarea>
+        </mat-form-field>
+      </div>
+    </form>
+
+    <div style="text-align: center">
+      <div>
+        <button mat-stroked-button type="submit"
+                (click)="save()" style="color: green"
+                [disabled]="course.invalid"
+        >
+          Create
+        </button>
+      </div>
+    </div>
+  </mat-card>
+</div>

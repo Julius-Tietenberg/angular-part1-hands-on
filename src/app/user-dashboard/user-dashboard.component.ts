@@ -42,5 +42,6 @@ export class UserDashboardComponent implements OnInit {
   save() {
     window.localStorage.removeItem('user');
     window.localStorage.setItem('user', JSON.stringify(this.user.value));
+    alert("The user detail was successfully changed");
   }
 }

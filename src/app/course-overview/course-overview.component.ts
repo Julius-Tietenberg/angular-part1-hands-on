@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { dummyCourses } from '../models/dummy';
+import { dummyCourses, myCoursesIds } from '../models/dummy';
 import { Course } from '../models/course';
 import { FormControl, FormGroup } from '@angular/forms';
 
@@ -10,6 +10,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class CourseOverviewComponent implements OnInit {
   courses: Course[] = dummyCourses;
+  showAddCourse = false;
 
   newCourse = new FormGroup({
     id: new FormControl(''),
@@ -26,22 +27,7 @@ export class CourseOverviewComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  reloadPage() {
-    window.location.reload();
-  }
-
-  save() {
-    let maxId = 0,
-      index = 0;
-    for (index; index < this.courses.length; index++) {
-      if (maxId < this.courses[index].id) {
-        maxId = this.courses[index].id;
-      }
-    }
-    this.newCourse.value.id = maxId + 1;
-    this.courses.push(this.newCourse.value);
-  }
-  showAddForm() {
-    this.isShow = !this.isShow;
+  showFormCourse() {
+    this.showAddCourse = !this.showAddCourse;
   }
 }
