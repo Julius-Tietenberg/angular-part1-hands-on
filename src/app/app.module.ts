@@ -6,24 +6,30 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FeaturesModule } from './features/features.module';
 import { MovieOverviewComponent } from './movie-overview/movie-overview.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
-import { MoiveDetailComponent } from './moive-detail/moive-detail.component';
-import { RouterModule, Routes } from '@angular/router';
 import { MovieHeaderComponent } from './movie-header/movie-header.component';
+import { RouterModule, Routes } from '@angular/router';
+//Task 4.1 Start
 
-const routes: Routes = [
+
+const routes:Routes=[
   { path: '', component: MovieOverviewComponent },
-  { path: 'detail/:id', component: MoiveDetailComponent },
-  { path: 'profil', component: UserDashboardComponent },
-  { path: '**', redirectTo: '' },
-];
+  //Task 3 Start
+
+
+  //Task 4.1 Continues
+
+  //Task 4.1 Ended
+]
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MovieOverviewComponent,
     UserDashboardComponent,
-    MoiveDetailComponent,
     MovieHeaderComponent,
+    //Task 4.1 Continues
   ],
   imports: [
     BrowserModule,

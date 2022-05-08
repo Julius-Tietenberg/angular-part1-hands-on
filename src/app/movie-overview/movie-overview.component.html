@@ -4,28 +4,34 @@
 
 <div class="button_menu">
   <div>
-    <a routerLink="/profil">
+    <!-- Task 3 Continues here -->
+    
       <button mat-stroked-button style="border: none">User Profil</button>
-    </a>
+    <!-- Task 3 Continues here -->
+    
+    <!-- Task 3 Ended -->
+
   </div>
 </div>
 
 <div class="movie_items">
-  <!-- Taks 1 start -->
   <div *ngFor="let movie of movies">
-    <mat-card class="movie_item">
-      <a routerLink="/detail/{{ movie.id }}">
-        <!-- Taks 1 continue -->
-        <img mat-card-image src="{{ movie.link }}" />
+    <!-- Task 4.2 Continues -->
+    
+      <mat-card class="movie_item">
+        <!-- Taks 1.1 Continues Add movie img here-->
+        <img mat-card-image src="" />
 
         <mat-card-content>
           <p>
-            <!-- Taks 1 continue -->
-            {{ movie.name }}
+            <!-- Taks 1.1 Continues Add movie name here -->
+            
+            <!-- Task 1.1 Ended -->
           </p>
         </mat-card-content>
-      </a>
-    </mat-card>
-    <!-- Taks 1 ended -->
+      </mat-card>
+      <!-- Task 4.2 Continues -->
+
+    <!-- Task 4.2 Ended -->
   </div>
 </div>
