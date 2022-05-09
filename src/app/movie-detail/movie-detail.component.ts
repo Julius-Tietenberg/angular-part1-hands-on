@@ -10,10 +10,12 @@ import { dummyMovies } from '../models/dummy';
 })
 export class MovieDetailComponent implements OnInit {
   movie: Movie | undefined;
-  //Task 4.2 Start
+
+  //Task 4.2 Start | Add the constructor here
 
   ngOnInit(): void {
-    //Task 4.2 Continues
+
+    //Task 4.2 Continues | Initialize the const id here, based on the parameters of the route
 
     this.movie = dummyMovies.find((movie) => movie.id === Number(id));
   }

@@ -8,17 +8,15 @@ import { MovieOverviewComponent } from './movie-overview/movie-overview.componen
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { MovieHeaderComponent } from './movie-header/movie-header.component';
 import { RouterModule, Routes } from '@angular/router';
-//Task 4.1 Start
+//Task 4.1 Start | Import the component here
 
 
 const routes:Routes=[
   { path: '', component: MovieOverviewComponent },
-  //Task 3 Start
+  //Task 3 Start | Add your route
 
+  //Task 4.1 Continues | Add another route
 
-  //Task 4.1 Continues
-
-  //Task 4.1 Ended
 ]
 
 
@@ -29,7 +27,9 @@ const routes:Routes=[
     MovieOverviewComponent,
     UserDashboardComponent,
     MovieHeaderComponent,
-    //Task 4.1 Continues
+    //Task 4.1 Continues | Declare the imported component here
+
+    //Task 4.1 End
   ],
   imports: [
     BrowserModule,

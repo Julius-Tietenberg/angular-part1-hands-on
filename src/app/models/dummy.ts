@@ -33,8 +33,6 @@ export let dummyMovies = [
   },
   //Task 1.2 Start
 
-
-
-
-  //Task 1.2 Ended
+  
+  //Task 1.2 End
 ];
